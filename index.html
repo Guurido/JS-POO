@@ -4,32 +4,52 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Roch</title>
+    <title>JS - Programmation Objet</title>
     <script src="script.js" defer></script>
-    <style>
-        h1{
-            color: rgb(6, 75, 75);
-        }
-        body{
-            font-family: Poppins;
-        }
-        span{
-            background-color: aqua;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Rectangle 1</h1>
-    <p id="longueur"></p>
-    <p id="largeur"></p>
-    <p id="surface"></p>
-    <h1>Rectangle 2</h1>
-    <p id="longueur2"></p>
-    <p id="largeur2"></p>
-    <p id="surface2"></p>
-    <h1>Rectangle 3</h1>
-    <p id="longueur3"></p>
-    <p id="largeur3"></p>
-    <p id="surface3"></p>
+    <main>
+      <div class="conteneur slide-up">
+        <h1>JS - POO</h1>
+        <h2 class="title">Rectangle 1</h2>
+        <p id="longueur"></p>
+        <p id="largeur"></p>
+        <p id="surface"></p>
+        <h2 class="title">Rectangle 2</h2>
+        <p id="longueur2"></p>
+        <p id="largeur2"></p>
+        <p id="surface2"></p>
+        <h2 class="title">Rectangle 3</h2>
+        <p id="longueur3"></p>
+        <p id="largeur3"></p>
+        <p id="surface3"></p>
+      </div>
+      <div class="conteneurSvg">
+        <svg
+          width="1000"
+          height="1000"
+          viewBox="0 0 1000 1000"
+          xmlns="http://www.w3.org/2000/svg"
+          class="blob"
+        >
+          <defs>
+            <clipPath id="shape">
+              <path
+                fill="currentColor"
+                d="M771.5,595.5Q691,691,595.5,784.5Q500,878,342.5,846.5Q185,815,252,657.5Q319,500,269.5,360Q220,220,360,194Q500,168,645,189Q790,210,821,355Q852,500,771.5,595.5Z"
+              ></path>
+            </clipPath>
+          </defs>
+
+          <g clip-path="url(#shape)">
+            <path
+              fill="#202020"
+              d="M771.5,595.5Q691,691,595.5,784.5Q500,878,342.5,846.5Q185,815,252,657.5Q319,500,269.5,360Q220,220,360,194Q500,168,645,189Q790,210,821,355Q852,500,771.5,595.5Z"
+            />
+          </g>
+        </svg>
+      </div>
+    </main>
   </body>
 </html>

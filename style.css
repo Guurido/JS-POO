@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --bg-color: #FFFFFF;
+    --font-color: #FFFFFF;
+    --js-txt: #919191;
+}
+
+p, h1, h2, h3, h4, h5, h6, span{
+    color: var(--font-color);
+}
+
+h1{
+    font-size: 45px;
+    font-weight: 500;
+}
+
+h2{
+    font-weight: 400;
+}
+
+body{
+    font-family: Poppins;
+    background-color: #303030;
+    overflow: hidden;
+}
+span{
+    background-color: var(--bg-color);
+}
+
+main{
+    display: flex;
+    justify-content: space-evenly;
+    height: 650px;
+    align-items: center;
+}
+
+.conteneur{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.title{
+    color: var(--font-color);
+}
+
+div.slide-up {
+    height: 400px;
+    overflow:hidden;
+}
+div.slide-up p {
+    animation: 2s slide-up;
+    margin-top:0%;
+}
+  
+@keyframes slide-up {
+    from {
+      margin-top: 1500px;
+      height: 300%; 
+    }
+    to {
+      margin-top: 0%;
+      height: 100%;
+    }
+}
+
+.jsTxt{
+    font-size: 14px;
+    color: var(--js-txt);
+}
+
+.blob{
+    height: 628px;
+    width: 470px;
+    animation: rotation 45s infinite linear;
+}
+  
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
