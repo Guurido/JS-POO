@@ -6,7 +6,7 @@
 :root{
     --bg-color: #FFFFFF;
     --font-color: #FFFFFF;
-    --js-txt: #919191;
+    --js-txt: #ffffff;
 }
 
 p, h1, h2, h3, h4, h5, h6, span{
@@ -24,8 +24,9 @@ h2{
 
 body{
     font-family: Poppins;
-    background-color: #303030;
-    overflow: hidden;
+    background-color: #FEE140;
+    background-image: linear-gradient(90deg, #FEE140 0%, #FA709A 100%);
+
 }
 span{
     background-color: var(--bg-color);
@@ -50,7 +51,7 @@ main{
 
 div.slide-up {
     height: 400px;
-    overflow:hidden;
+    overflow: hidden;
 }
 div.slide-up p {
     animation: 2s slide-up;
@@ -71,6 +72,7 @@ div.slide-up p {
 .jsTxt{
     font-size: 14px;
     color: var(--js-txt);
+    background-color: transparent;
 }
 
 .blob{
